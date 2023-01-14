@@ -1,0 +1,29 @@
+[
+  {
+    "id": 0,
+    "question": "Lorem ipsum?",
+    "answer": "Dolor Sit",
+    "tag 1": true,
+    "tag 2": true,
+    "tag 3": true,
+    "isFavorite": false
+  },
+  {
+    "id": 1,
+    "question": "Lorem ipsum?",
+    "answer": "Dolor Sit",
+    "tag 1": true,
+    "tag 2": true,
+    "tag 3": true,
+    "isFavorite": false
+  },
+  {
+    "id": 2,
+    "question": "Lorem ipsum?",
+    "answer": "Dolor Sit",
+    "tag 1": true,
+    "tag 2": true,
+    "tag 3": true,
+    "isFavorite": false
+  }
+]
