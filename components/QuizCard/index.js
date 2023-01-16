@@ -1,4 +1,5 @@
 import Questions from "../../db.json";
+import { useState } from "react";
 
 const bookmark = (
   <svg
@@ -21,14 +22,23 @@ const bookmarkFilled = (
   </svg>
 );
 export default function Cards() {
+  const [showAnswer, setShowAnswer] = useState(false);
   return (
     <ul>
       {Questions.map((Question) => (
         <li key={Question.id}>
           <h2>{Question.question}</h2>
           <button>{Question.isFavorite ? bookmarkFilled : bookmark}</button>
+          {/* <div style={{ display: showAnswer ? "block" : "none" }}> */}
           <p>{Question.answer}</p>
-          <button>Show Answer</button>
+          {/* </div> */}
+          <button
+            onClick={() => {
+              setShowAnswer(!showAnswer);
+            }}
+          >
+            {showAnswer ? Question.answer : "Show answer"}
+          </button>
           <ul>
             <li>Tag1</li>
             <li>Tag2</li>
